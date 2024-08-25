@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+
 }
 
 :root {
@@ -20,12 +21,24 @@ body {
     "aside header"
     "aside main"
     ;
-    font-family: roboto;
+    font-family: "Roboto", sans-serif;
 }
 
 aside {
+    padding: 1rem;
     background-color: var(--bg-theme);
     grid-area: aside;
+}
+
+aside .logo {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+aside .logo h1 {
+    justify-self: start;
+    font-size: 1.9rem;
 }
 
 aside .logo, aside .menu a {
@@ -33,11 +46,13 @@ aside .logo, aside .menu a {
 }
 
 header {
+    padding: 1rem;
     background-color: white;
     grid-area: header;
 }
 
 main {
+    padding: 1rem;
     grid-area: main;
 }
 
