@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --bg-theme: #7c3aed;
+    --bg-card: #eab308;
+    --bg-background: #ddd6fe;
+}
+
+body {
+    background-color: var(--bg-background);
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+    "aside header"
+    "aside main"
+    ;
+    font-family: roboto;
+}
+
+aside {
+    background-color: var(--bg-theme);
+    grid-area: aside;
+}
+
+aside .logo, aside .menu a {
+    color: white;
+}
+
+header {
+    background-color: white;
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+.primary-icon {
+    width: 50px;
+}
+
+.secondary-icon {
+    width: 25px;
+}
+
+.big-profile {
+    width: 65px;
+}
