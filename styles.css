@@ -24,6 +24,20 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+.primary-icon {
+    width: 50px;
+}
+
+.secondary-icon {
+    width: 25px;
+}
+
+.big-profile {
+    width: 65px;
+}
+
+/* ASIDE */
+
 aside {
     padding: 1rem;
     background-color: var(--bg-theme);
@@ -57,25 +71,60 @@ aside .logo, aside .menu a {
     color: white;
 }
 
+/* HEADER */
+
 header {
-    padding: 1rem;
+    padding: 1rem 3rem;
     background-color: white;
     grid-area: header;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
+
+header nav, header section {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 5fr 3fr;
+}
+
+header nav form {
+    display: flex;
+    gap: 1rem;
+    max-height: 2rem;
+    align-items: center;
+}
+
+header nav form input {
+    flex: 1;
+    max-width: 40rem;
+    height: 2rem;
+    border: none;
+    padding: .5rem;
+    outline: none;
+    background-color: var(--bg-background);
+    border-radius: 15px;
+}
+
+header nav .user {
+    margin-left: 3rem;
+    justify-self: right;
+    display: flex;
+    gap: 1.8rem;
+    align-items: center;
+}
+
+header nav .user img {
+    border-radius: 50%;
+}
+
+header nav .user h2 {
+    font-size: 1.4rem;
+}
+
+
+/* MAIN */
 
 main {
     padding: 1rem;
     grid-area: main;
 }
 
-.primary-icon {
-    width: 50px;
-}
-
-.secondary-icon {
-    width: 25px;
-}
-
-.big-profile {
-    width: 65px;
-}
