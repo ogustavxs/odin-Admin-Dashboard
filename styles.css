@@ -226,6 +226,36 @@ main .announcements {
     grid-row: 1;
 }
 
+main .announcements h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: .8rem;
+}
+
+main .announcements ul {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+main .announcements ul div {
+    border: 1px solid rgb(224, 224, 224);
+    margin: 1rem 0;
+}
+
+main .announcements ul h3 {
+    font-size: 1rem;
+}
+
+main .announcements ul p {
+    color: rgb(73, 73, 73);
+    font-weight: 400;
+    font-size: .8rem;
+}
+
 main .trendings {
     grid-column: 2;
     grid-row: 2;
