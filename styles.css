@@ -32,9 +32,7 @@ body {
     width: 25px;
 }
 
-.big-profile {
-    width: 65px;
-}
+
 
 /* ASIDE */
 
@@ -120,6 +118,25 @@ header nav .user h2 {
     font-size: 1.4rem;
 }
 
+header section .hello-user {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    margin-top: 1.8rem;
+}
+
+header section .hello-user .big-profile {
+    width: 75px;
+    border-radius: 50%;
+}
+
+header section .hello-user div {
+    font-weight: 700;
+}
+
+#bignamep {
+    font-size: 1.6rem;
+}
 
 /* MAIN */
 
