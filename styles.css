@@ -183,14 +183,14 @@ main .projects #title {
 main .projects .container-card {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
+    gap: 30px;
 }
 
 main .projects .card {
     background-color: white;
     border-left: 10px solid var(--bg-card);
     border-radius: 10px;
-    min-height: 200px;
+    min-height: 225px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     padding: 2rem 1.6rem;
     display: flex;
@@ -259,4 +259,40 @@ main .announcements ul p {
 main .trendings {
     grid-column: 2;
     grid-row: 2;
+}
+
+main .trendings h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: .8rem;
+}
+
+main .trendings ul {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+main .trendings li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+main .trendings li img {
+    border-radius: 50%;
+}
+
+main .trendings li h3 {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+main .trendings li p {
+    color: rgb(73, 73, 73);
+    font-size: .9rem;
 }
